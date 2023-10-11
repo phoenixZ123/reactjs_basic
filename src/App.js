@@ -1,6 +1,6 @@
 
 import './App.css';
-
+import img from './assets/haha.avif';
 function App() {
   return (
     <div className="App">
@@ -11,9 +11,11 @@ function App() {
         <img src='http://localhost:3000/haha.avif ' alt="" ></img>
         <h2>Relative path</h2>
         <img src='/haha.avif' alt="" ></img>
-
+        {/* second way with importing image assets folder*/}
+        <h2>Import image</h2>
+        <img src={img} alt="" ></img>
       </header>
-    </div>
+    </div >
   );
 }
 
