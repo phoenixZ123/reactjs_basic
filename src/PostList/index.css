@@ -1,0 +1,17 @@
+.postList {
+  height: 100vh;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.postList .single {
+  flex: 1;
+  background-color: #12fafa;
+  margin: 20px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

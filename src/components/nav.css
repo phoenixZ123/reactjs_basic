@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 35px;
+  margin: auto;
+  max-width: 1200px;
+  background-color: #22afaf;
+}
+.container ul {
+  display: flex;
+}
+.container li {
+  list-style-type: none;
+  margin: 0 20px;
+}
