@@ -43,10 +43,11 @@ export default function App() {
 
       <h3>Posts</h3>
       <ul key={posts.id}>
-        {posts.map((posts) => <li key={posts.id}>{posts.title}
+        {posts.length && posts.map((posts) => <li key={posts.id}>{posts.title}
           {/* in the delete function need to function reference pass type like>> =()=>
           int the function have to pass parameter should do like this */}
           <button style={{ marginLeft: 10 }} onClick={() => deletethepost(posts.id)}>Delete</button></li>)}
+        {!posts.length && <h2>No Data Available</h2>}
       </ul>
       <h2>number :{count}</h2>
       {/* if you add next integer need to write  function in setState */}
