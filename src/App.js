@@ -1,20 +1,43 @@
 
+import { useState } from 'react';
 import './App.css';
-import img from './assets/haha.avif';
+
 function App() {
+  // useState Hook
+  var [name, Setname] = useState("pwintphoowai");
+  const [posts, setPosts] = useState([
+    {
+      id: 1,
+      title: 'for teenager'
+    },
+    {
+      id: 2,
+      title: 'for young'
+    },
+    {
+      id: 3,
+      title: 'for old'
+    }
+  ]);
+
+  const changename = () => {
+    // setname is asynchronous job
+    Setname(name = "Your God");
+  }
+  // console.log(name);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <i class="">Hi There</i>
-        {/* Firstly public folder way */}
-        <h2>Absolute path</h2>
-        <img src='http://localhost:3000/haha.avif ' alt="" ></img>
-        <h2>Relative path</h2>
-        <img src='/haha.avif' alt="" ></img>
-        {/* second way with importing image assets folder*/}
-        <h2>Import image</h2>
-        <img src={img} alt="" ></img>
-      </header>
+
+      <h2>Name Declaration</h2>
+
+      <h5>Name : {name}</h5>
+      <button onClick={changename}>Change</button>
+
+      <h3>Posts</h3>
+      <ul key={posts.id}>
+        {posts.map((posts) => <li key={posts.id}>{posts.title}</li>)}
+      </ul>
     </div >
   );
 }
