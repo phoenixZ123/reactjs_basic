@@ -26,8 +26,13 @@ export default function App() {
     // setname is asynchronous job
     Setname(name = "Your God");
   }
-  // console.log(name);
 
+  // delete
+  const deletethepost = (id) => {
+    // filter is to output show document
+    setPosts(preState => preState.filter(post => post.id !== id));
+    console.log(id)
+  }
   return (
     <div className="App">
 
@@ -38,10 +43,13 @@ export default function App() {
 
       <h3>Posts</h3>
       <ul key={posts.id}>
-        {posts.map((posts) => <li key={posts.id}>{posts.title}</li>)}
+        {posts.map((posts) => <li key={posts.id}>{posts.title}
+          {/* in the delete function need to function reference pass type like>> =()=>
+          int the function have to pass parameter should do like this */}
+          <button style={{ marginLeft: 10 }} onClick={() => deletethepost(posts.id)}>Delete</button></li>)}
       </ul>
       <h2>number :{count}</h2>
-      {/* if you add next integer need to write double looping */}
+      {/* if you add next integer need to write  function in setState */}
       {/* convert function */}
       <button onClick={() => {
         setCount((pre) => pre + 1);
