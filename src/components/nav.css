@@ -1,0 +1,20 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #afaf2131;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container ul {
+  display: flex;
+}
+.container li {
+  list-style-type: none;
+  margin: 0px 20px;
+}

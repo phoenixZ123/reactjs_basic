@@ -1,0 +1,12 @@
+.postList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.postList .single {
+  height: 250px;
+  width: 200px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: #1321aa;
+}
