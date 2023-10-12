@@ -2,9 +2,11 @@
 import { useState } from 'react';
 import './App.css';
 
-function App() {
+export default function App() {
   // useState Hook
-  var [name, Setname] = useState("pwintphoowai");
+  // if u change name declare let
+  let [name, Setname] = useState("pwintphoowai");
+  const [count, setCount] = useState(0);
   const [posts, setPosts] = useState([
     {
       id: 1,
@@ -38,8 +40,17 @@ function App() {
       <ul key={posts.id}>
         {posts.map((posts) => <li key={posts.id}>{posts.title}</li>)}
       </ul>
+      <h2>number :{count}</h2>
+      {/* if you add next integer need to write double looping */}
+      {/* convert function */}
+      <button onClick={() => {
+        setCount((pre) => pre + 1);
+        setCount((pre) => pre + 1);
+      }}>Increment</button>
+
+      <button style={{ marginLeft: 50 }} onClick={() => setCount((pre) => pre = 0)}>Refresh</button>
     </div >
   );
 }
 
-export default App;
+
