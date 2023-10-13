@@ -1,0 +1,21 @@
+.navbar .container {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background-color: #afaf12;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar .container ul {
+  display: flex;
+}
+.navbar .container li {
+  list-style-type: none;
+  margin: 0px 20px;
+}
+.navbar .container button {
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+.modal-component .modal-backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  top: -200px;
+}
+.modal-component .modal {
+  background-color: white;
+
+  max-width: 400px;
+  margin: 400px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.modal-component .modal p {
+  margin: 20px;
+}
+.modal-component .modal button {
+  background-color: red;
+  margin-left: 30px;
+  padding: 2px;
+  border-radius: 5px;
+}
+.modal-component .available {
+  color: darkgreen;
+  font-weight: 600px;
+  font-size: 20px;
+}
+.modal-component .outofstock {
+  color: red;
+  font-weight: 600px;
+  font-size: 20px;
+}
