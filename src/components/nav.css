@@ -5,7 +5,12 @@
 }
 
 .container {
-  background-color: #afaf2131;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background-color: #afaf12;
+
   height: 30px;
   display: flex;
   justify-content: space-around;

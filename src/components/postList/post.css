@@ -1,9 +1,10 @@
 .postList {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  height: 200vh;
+  justify-content: center;
 }
 .postList .single {
+  margin-top: 50px;
   height: 250px;
   width: 200px;
   font-weight: 600;
