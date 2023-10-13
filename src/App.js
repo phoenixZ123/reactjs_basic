@@ -6,6 +6,7 @@ import { Post } from './components/postList/Post';
 import { Model } from './components/Model/Model';
 
 function App() {
+  const [show, setShow] = useState(false);
   const [posts, setPost] = useState([
     {
       id: 1,
@@ -24,12 +25,17 @@ function App() {
   ])
   return (
     <div className="App">
-      <Navbar />
+      <Navbar setShow={setShow} />
       <Post datas={posts} />
-      <Model >
-        <p>This Product is available now</p>
-        <a href=''>join here</a>
-      </Model>
+
+      {show && <Model >
+        <p> This Product is available now</p>
+        <a href='' >join here</a>
+        <button onClick={() => setShow(false)}>Close</button>
+      </Model>}
+
+
+
     </div>
   );
 }

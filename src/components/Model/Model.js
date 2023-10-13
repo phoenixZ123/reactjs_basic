@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React, { children } from 'react'
 import './modal.css'
 export const Model = ({ children }) => {
     return (
