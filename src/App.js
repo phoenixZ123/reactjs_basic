@@ -1,17 +1,15 @@
-
 import { useState } from 'react';
 import './App.css';
 import { Navbar } from './components/Navbar';
 import { Post } from './components/postList/Post';
 import { Model } from './components/Model/Model';
-
+import { Form } from './components/PostForm/Form';
 function App() {
   const [show, setShow] = useState(false);
   const [posts, setPost] = useState([
     {
       id: 1,
       name: "PPW"
-
     }, {
       id: 2,
       name: "SUSU"
@@ -23,15 +21,18 @@ function App() {
       name: "EIEI"
     }
   ])
+
   return (
     <div className="App">
       <Navbar setShow={setShow} />
       <Post datas={posts} />
 
       {show && <Model active={true}>
-        <p> This Product is available now</p>
-        <a href='' >join here</a>
-        <button onClick={() => setShow(false)}>Close</button>
+        <Form>
+          <button onClick={() => setShow(false)}>Cancel</button>
+          <button className='signup'>Post Now</button>
+        </Form>
+        {/* <button onClick={() => setShow(false)}>Cancel</button> */}
       </Model>}
 
 

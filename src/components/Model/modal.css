@@ -4,12 +4,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  top: -200px;
+  top: -300px;
 }
 .modal-component .modal {
-  background-color: white;
-
-  max-width: 400px;
+  opacity: 1;
+  transition: all 0.8s ease;
+  background-image: url("./photo-1497015289639-54688650d173.avif");
+  max-width: 300px;
   margin: 400px auto;
   padding: 20px;
   border-radius: 10px;
@@ -24,12 +25,54 @@
   padding: 2px;
   border-radius: 5px;
 }
+.modal-component .modal .signup {
+  background-color: lightgreen;
+}
 .modal-component .available {
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+
+  box-shadow: -0.3em 0px 2px 3px #afad81;
   color: darkgreen;
   font-weight: 600px;
   font-size: 20px;
 }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 100px;
+    top: 0px;
+  }
+  /*  50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}*/
+}
+
+/* Standard syntax */
+@keyframes example {
+  0% {
+    background-color: olive;
+    //left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: lightgreen;
+    //left: 200px;
+    top: 0px;
+  }
+  /*  50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}*/
+}
 .modal-component .outofstock {
+  border: 2px solid red;
   color: red;
   font-weight: 600px;
   font-size: 20px;

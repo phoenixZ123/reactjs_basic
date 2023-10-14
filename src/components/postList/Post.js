@@ -1,6 +1,8 @@
 
 import './post.css';
 import styles from '../postList/single.module.css';
+import { useState } from 'react';
+
 export const Post = ({ datas }) => {
 
     return (

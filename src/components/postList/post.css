@@ -1,5 +1,6 @@
 .post .postList {
   display: flex;
+  flex-grow: row-wrap;
   height: 200vh;
   justify-content: center;
   margin: 10px;
