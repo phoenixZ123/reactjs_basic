@@ -29,8 +29,8 @@ function App() {
 
       {show && <Model active={true}>
         <Form>
-          <button onClick={() => setShow(false)}>Cancel</button>
-          <button className='signup'>Post Now</button>
+          <button type='button' onClick={() => setShow(false)}>Cancel</button>
+          <button type='button' className='signup'>Post Now</button>
         </Form>
         {/* <button onClick={() => setShow(false)}>Cancel</button> */}
       </Model>}
