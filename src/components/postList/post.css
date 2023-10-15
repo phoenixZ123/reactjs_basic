@@ -1,15 +1,17 @@
 .post .postList {
   display: flex;
   flex-grow: row-wrap;
-  height: 200vh;
-  justify-content: center;
+  height: 70vh;
   margin: 10px;
+  flex-wrap: wrap;
+}
+.post {
+  height: 100vh;
 }
 .post .postList .single {
-  margin-top: 50px;
-  margin-right: 10px;
-  height: 250px;
-  width: 200px;
+  margin: 10px;
+  height: 230px;
+  width: 150px;
   font-weight: 600;
   background-color: #66fafa;
 }

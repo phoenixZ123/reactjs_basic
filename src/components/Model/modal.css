@@ -6,9 +6,10 @@
   left: 0;
   top: -300px;
 }
+
 .modal-component .modal {
   transition: all 0.8s ease;
-  background-image: url("./photo-1497015289639-54688650d173.avif");
+  background-color: #3b3b2abb;
   max-width: 300px;
   margin: 400px auto;
   padding: 20px;
@@ -29,12 +30,12 @@
 }
 .modal-component .available {
   position: relative;
-  -webkit-animation-name: example; 
-  -webkit-animation-duration: 2s; 
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 2s;
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 1s;
   box-shadow: -0.3em 0px 2px 3px #afad81;
-  color: darkgreen;
+  color: lightgreen;
   font-weight: 600px;
   font-size: 20px;
 }
@@ -47,7 +48,7 @@
   25% {
     left: 100px;
     top: 0px;
-  }  
+  }
 }
 
 /* Standard syntax */
@@ -57,7 +58,7 @@
     top: 0px;
   }
   25% {
-    background-color: lightgreen;  
+    background-color: lightgreen;
     top: 0px;
   }
 }

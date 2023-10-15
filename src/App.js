@@ -13,24 +13,22 @@ function App() {
     }, {
       id: 2,
       name: "SUSU"
-    }, {
-      id: 3,
-      name: "THETTHET"
-    }, {
-      id: 4,
-      name: "EIEI"
     }
   ])
-
+  // add post from form update
+  const addPost = (post) => {
+    setPost(preState => [...preState, post]);
+    setShow(false)
+  }
   return (
     <div className="App">
       <Navbar setShow={setShow} />
       <Post datas={posts} />
 
       {show && <Model active={true}>
-        <Form>
+        <Form addPost={addPost}>
           <button type='button' onClick={() => setShow(false)}>Cancel</button>
-          <button type='button' className='signup'>Post Now</button>
+          <button type='submit' className='signup'>Post Now</button>
         </Form>
         {/* <button onClick={() => setShow(false)}>Cancel</button> */}
       </Model>}
