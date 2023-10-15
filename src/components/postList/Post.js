@@ -7,8 +7,9 @@ export const Post = ({ datas }) => {
 
     return (
         <><div className='post'>
-            <div className='postList'> <h3>Posts</h3>
-                {datas.map(data => <div key={data.id} className={`single ${styles.card}`}>{data.name}
+            <div className='postList'>
+                {datas.map(data => <div key={data.id} className={`single ${styles.card}`}>
+                    <h4>{data.name}</h4> <h4>{data.status}</h4>
                 </div>)}
             </div>
         </div>

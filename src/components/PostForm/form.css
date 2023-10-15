@@ -2,6 +2,13 @@
   padding: 20px;
   font-family: san-serif;
 }
+.post-form .form-control select {
+  background-color: rgba(0, 0, 0, 0.686);
+  outline: none;
+  color: lightgreen;
+  padding: 3px;
+}
+
 .post-form .form-control label {
   margin-right: 20px;
   font-size: 20px;

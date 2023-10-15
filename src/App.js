@@ -6,13 +6,16 @@ import { Model } from './components/Model/Model';
 import { Form } from './components/PostForm/Form';
 function App() {
   const [show, setShow] = useState(false);
+
   const [posts, setPost] = useState([
     {
       id: 1,
-      name: "PPW"
+      name: "PPW",
+      status:"yangon"
     }, {
       id: 2,
-      name: "SUSU"
+      name: "Nigga",
+      status:"mandalay"
     }
   ])
   // add post from form update
